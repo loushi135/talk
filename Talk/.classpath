@@ -22,6 +22,7 @@
 	<classpathentry kind="src" path="src/plugins/translator/src/test"/>
 	<classpathentry kind="src" path="src/resources/i18n"/>
 	<classpathentry kind="src" path="src/test"/>
+	<classpathentry kind="src" path="src/plugins/lsq/src/java"/>
 	<classpathentry kind="lib" path="build/lib/ant-contrib.jar"/>
 	<classpathentry kind="lib" path="build/lib/asm.jar"/>
 	<classpathentry kind="lib" path="build/lib/checkstyle.jar"/>
