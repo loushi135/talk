@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="Spark" default="release" basedir="..">
+<project name="Talk" default="release" basedir="..">
 
 	<description>
         Spark build script.
@@ -91,12 +91,12 @@
 
 	<!-- Installer Ant Script -->
 
-	<property name="installer.install4j.home" value="/home/j2ee-bamboo/install4j.4.0.5"/>
+	<property name="installer.install4j.home" value="C:\Program Files\install4j5"/>
 	<property name="installer.dest.dir" value="${target}/installer"/>
 	<property name="installer.install4j.srcfile" value="${basedir}/build/installer/spark.install4j"/>
-	<property name="installer.app_name" value="Spark"/>
-	<property name="installer.app_short_name" value="Spark"/>
-	<property name="installer.product_name" value="Spark"/>
+	<property name="installer.app_name" value="lsqTalk"/>
+	<property name="installer.app_short_name" value="lsqT"/>
+	<property name="installer.product_name" value="shiqian"/>
 	<property name="installer.publisher" value="Jive Software"/>
 	<property name="installer.publisher_url" value="www.jivesoftware.com"/>
 	<property name="installer.file_prefix" value="${installer.app_short_name}"/>
@@ -114,7 +114,7 @@
 
 	<!-- IzPack Installer -->
 	<property name="installer.izpack.dir" value="/opt/IzPack/"/>
-	<property name="launch4j.dir" location="/opt/Launch4j" />
+	<property name="launch4j.dir" location="C:\launch4j" />
 
 	<!-- Inno Setup -->
 	<property name="innosetup.dir" location="C:\\Programme\\Inno Setup 5\\" />
@@ -381,9 +381,6 @@
 			<fileset dir="./src/plugins/spelling/" includes="*/build.xml" />
 		</subant>
 		<subant target="">
-			<fileset dir="./src/plugins/roar/" includes="*/build.xml" />
-		</subant>
-		<subant target="">
 			<fileset dir="./src/plugins/transferguard/" includes="*/build.xml" />
 		</subant>
 		<!-- <subant target="">
@@ -392,6 +389,9 @@
 		-->
 		<subant target="">
 				<fileset dir="./src/plugins/otr/" includes="*/build.xml" />
+		</subant>
+		<subant target="">
+				<fileset dir="./src/plugins/lsq/" includes="*/build.xml" />
 		</subant>
 		
 		<!--	<subant target="">
